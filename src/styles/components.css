@@ -1,0 +1,271 @@
+/* Shared page content wrapper */
+.page-content {
+  margin-left: 220px;   /* same as sidebar width */
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+/* Destination styles */
+.destination-list {
+  margin: 20px 0;
+}
+
+.search-bar {
+  padding: 8px;
+  margin-bottom: 12px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.destination-card {
+  background: #f9f9f9;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.destination-card:hover {
+  transform: scale(1.05);
+}
+
+/* Customers */
+.customer-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.customer-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.customer-form button {
+  padding: 8px 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.customer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.customer-card {
+  background: #f9f9f9;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.customer-card button {
+  margin-top: 10px;
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Payments */
+.payment-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.payment-card {
+  background: #f9f9f9;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.payment-card button {
+  margin-top: 10px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Statistics */
+.chart-section {
+  margin-bottom: 40px;
+}
+
+.chart-section h2 {
+  margin-bottom: 12px;
+}
+
+/* Trips */
+.trip-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.trip-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.trip-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.trip-form button {
+  padding: 8px 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.trip-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.trip-card {
+  background: #f9f9f9;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.trip-card button {
+  margin-top: 10px;
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.calendar-view {
+  margin-left: 220px;   /* offset for sidebar */
+  padding:10px 20px;
+  background-color: #f4f6f9;
+}
+
+/* Heading spacing */
+.calendar-view h2 {
+   margin: 0 ;    /* remove extra top margin, small gap below */
+  
+}
+
+/* Calendar widget */
+.react-calendar {
+  margin-top: 0;   
+  display: block; /* bring calendar closer to heading */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 5px;
+  background: #fff;
+}
+
+/* Bookings list */
+.calendar-view ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.calendar-view li {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 14px;
+  color: #2c3e50;
+  transition: transform 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hover effect */
+.calendar-view li:hover {
+  transform: scale(1.03);
+  background: #eef2f7;
+}
+
+/* Status badge */
+.booking-status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.booking-status.upcoming {
+  background-color: #4caf50; /* green */
+}
+
+.booking-status.past {
+  background-color: #f44336; /* red */
+}
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f4f6f9;
+}
+
+.login-page form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-page input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-page button {
+  background: #3f51b5;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-page button:hover {
+  background: #303f9f;
+}

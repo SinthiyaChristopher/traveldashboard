@@ -1,0 +1,96 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #f8a305f6; /* dark blue-gray */
+  color: #f1e6f9;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 12px 0;
+}
+
+.sidebar a {
+  color: #f2eff3;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 4px;
+}
+
+.sidebar a:hover {
+  background-color: #34495e;
+}
+
+/* Main content wrapper (applies to all pages) */
+.main-content {
+  margin-left: 220px; /* same as sidebar width */
+  padding-top: 60px;    /* if you have a fixed header */
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+/* Header bar */
+.header {
+  background-color: #c080f8;
+  color: #fff;
+  padding: 15px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+/* Page content area */
+.page-content {
+  padding: 20px;
+  
+}
+.header1 {
+  position: fixed;       /* keep header at the top */
+  top: 0;
+  left: 260px;           /* start after sidebar */
+  right: 0;
+  height: 60px;
+  text-align: center;
+  font-size: x-large;
+  color: blue;
+  background-color: #f4f6f9; /* light background so text is visible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;          /* ensure it stays above content */
+}
+.logout-btn {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #d32f2f;
+}
